@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav section {
+  color: #d4af37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section button {
+  background: rgb(212, 175, 55);
+  background: linear-gradient(
+    225deg,
+    rgba(80, 49, 19, 1) 10%,
+    rgba(212, 175, 55, 1) 80%
+  );
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 100%;
+  padding: 4px 20px;
+  margin-top: 20px;
+}
+
+section > button:hover {
+  transform: scale(1.1);
+}
+
+.image-logo {
+  width: 35%;
+  border-radius: 50%;
+}
+
+.image-logo > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.burger {
+  padding: 20px;
+}
+
+nav .burger > div {
+  width: 25px;
+  height: 2px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  background: rgb(212, 175, 55);
+  background: linear-gradient(
+    225deg,
+    rgba(80, 49, 19, 1) 10%,
+    rgba(212, 175, 55, 1) 80%
+  );
+}
+
+main {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  background-image: url("img/jonathan-borba-lrQPTQs7nQQ-unsplash-scaled-e1604518707820.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+main .container {
+  padding: 10px;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  font-weight: bold;
+  color: #d4af37;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.first {
+  animation-name: opacity;
+  animation-duration: 5s;
+}
+
+.second {
+  animation-name: opacity;
+  animation-duration: 6s;
+}
+
+.third {
+  animation-name: opacity;
+  animation-duration: 7s;
+}
+
+#corsi {
+  padding: 20px;
+  color: #d4af37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#corsi .corsi {
+  width: 50%;
+  height: 50%;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.corsi img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.corsi > div {
+  width: 100%;
+  text-align: center;
+}
