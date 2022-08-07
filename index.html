@@ -4,55 +4,128 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Palestra Pegaso</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <div class="image-logo">
-          <img src="img/logo-bronze.jpg" alt="Logo Pegaso" />
+        <div class="left">
+          <div class="inside-left">
+            <div class="instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+            <div class="youtube">
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </div>
+            <div class="facebook">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </div>
         </div>
-        <div class="burger">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="center">
+          <div class="logo">
+            <img src="img/logo-bronze.jpg" alt="Logo" />
+          </div>
         </div>
-        <section>
-          <h2>Palestra Pegaso</h2>
-          <button>Entra</button>
-        </section>
+        <div class="right">
+          <div class="user">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </div>
+          <div class="menu">
+            <div>Home</div>
+            <div>Corsi</div>
+            <div>Su di noi</div>
+            <div>Contatti</div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
-      <div class="container">
-        <h2>
-          <span class="first">Crescere, </span
-          ><span class="second">giorno dopo giorno, </span
-          ><span class="third">insieme</span>
-        </h2>
+      <h1>Palestra Pegaso</h1>
+      <div class="jumbotron">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <button>Allenati con noi</button>
       </div>
+      <section class="nostri-corsi">
+        <h2>I nostri corsi</h2>
+        <div class="card">
+          <h3>Calisthenics</h3>
+          <div class="card-image">
+            <img src="img/calisthenics.jpg" alt="" />
+          </div>
+          <button>Scheda</button>
+        </div>
+        <div class="card">
+          <h3>Posturale</h3>
+          <div class="card-image">
+            <img src="img/ginnastica-posturale-1-1024x683.jpg" alt="" />
+          </div>
+          <button>Scheda</button>
+        </div>
+        <div class="card">
+          <h3>Spinning</h3>
+          <div class="card-image">
+            <img src="img/pr-spinning-820x450.jpg" alt="" />
+          </div>
+          <button>Scheda</button>
+        </div>
+      </section>
+      <section class="servizi-personalizzati">
+        <h2>Assistenza Personalizzata</h2>
+        <div class="servizi">
+          <div class="servizi-image">
+            <img src="img/personal-trainer.jpg" alt="" />
+          </div>
+          <h2>Personal Trainer</h2>
+          <p>Prenota una lezione privata con un nostro Personal Trainer</p>
+          <button>Info</button>
+        </div>
+        <div class="servizi">
+          <div class="servizi-image">
+            <img src="img/re-envisioning sgt.jpg" alt="" />
+          </div>
+          <h2>Mini Gruppi</h2>
+          <p>
+            Partecipa ad una sessione di gruppo (max 6 persone) con un nostro
+            Personal Trainer
+          </p>
+          <button>Info</button>
+        </div>
+      </section>
     </main>
-    <section id="corsi">
-      <h2>I nostri corsi</h2>
-      <div class="corsi">
-        <img src="img/ginnastica-posturale-1-1024x683.jpg" alt="" />
-        <div>
-          <button>Posturale</button>
+    <footer>
+      <div class="logo-min">
+        <img src="img/logo-bronze.jpg" alt="" />
+      </div>
+      <h3>Palestra Pegaso</h3>
+      <p>Via Ameglia, 74 19021 Arcola SP</p>
+      <div class="contatti">
+        <div class="phone">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <p>0187 989440</p>
+        </div>
+        <div class="mail">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <p>palestrapegaso@gmail.com</p>
         </div>
       </div>
-      <div class="corsi">
-        <img src="img/calisthenics.jpg" alt="" />
-        <div>
-          <button>Calisthenics</button>
-        </div>
+      <div class="orari">
+        <h3>Orari</h3>
+        <div>Lunedì: 08 - 21</div>
+        <div>Martedì: 08 - 14, 17 - 21</div>
+        <div>Mercoledì: 08 - 21</div>
+        <div>Giovedì: 08 - 14, 17 - 21</div>
+        <div>Venerdì: 08 - 21</div>
+        <div>Sabato: 09 - 15</div>
+        <div>Domenica: chiuso</div>
       </div>
-      <div class="corsi">
-        <img src="img/pr-spinning-820x450.jpg" alt="" />
-        <div>
-          <button>Spinning</button>
-        </div>
-      </div>
-    </section>
+    </footer>
   </body>
 </html>
