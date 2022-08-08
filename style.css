@@ -20,7 +20,8 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
 }
 
@@ -29,7 +30,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  height: 30px;
+  height: 40px;
   background: rgb(212, 175, 55);
   background: linear-gradient(
     275deg,
@@ -39,25 +40,15 @@ nav {
   z-index: 999;
 }
 
-.left,
 .center,
 .right {
   height: 100%;
-}
-
-.left {
-  width: 25%;
-}
-
-.right {
-  width: 25%;
+  width: 100%;
 }
 
 .left .inside-left {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 75px;
+  justify-content: space-evenly;
 }
 
 .left .inside-left > div > i {
@@ -70,29 +61,16 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.inside-left {
-  width: 50%;
+  transform: translateX(-10%);
 }
 
 .instagram,
 .youtube,
 .facebook {
-  width: 100%;
+  margin: 0 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 10px;
-  margin-bottom: 10px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background: rgb(212, 175, 55);
-  background: linear-gradient(
-    275deg,
-    rgba(80, 49, 19, 1) 10%,
-    rgba(212, 175, 55, 1) 80%
-  );
 }
 
 .instagram > i {
@@ -108,7 +86,8 @@ nav {
 }
 
 .center {
-  width: 50%;
+  margin: 80px 0 0 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,12 +109,13 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .user {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 10px;
   z-index: 999;
   background-color: white;
@@ -152,24 +132,60 @@ nav {
   color: #d4af37;
 }
 
-.menu > div {
-  padding: 5px;
-  font-size: 12px;
-  color: white;
+#menu > div {
+  width: 30px;
+  padding: 2px;
+  border-radius: 20px;
   background: rgb(212, 175, 55);
   background: linear-gradient(
     275deg,
     rgba(80, 49, 19, 1) 10%,
     rgba(212, 175, 55, 1) 80%
   );
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 
+#sub-menu {
+  color: white;
+  display: none;
+}
+
+#sub-menu ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+}
+
+#sub-menu ul li {
+  border: 1px solid #d4af37;
+  margin: 3px;
+  padding: 3px;
+  border-radius: 20px;
+  min-width: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sub-menu ul li:hover {
+  background: rgb(212, 175, 55);
+  background: linear-gradient(
+    275deg,
+    rgba(80, 49, 19, 1) 10%,
+    rgba(212, 175, 55, 1) 80%
+  );
+  color: black;
+}
+
+.active {
+  display: block;
+}
 /* MAin */
 main {
   color: white;
+  margin-top: 60px;
 }
 
 main > h1 {
