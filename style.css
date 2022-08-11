@@ -193,7 +193,7 @@ nav {
 }
 
 #sub-menu ul li {
-  border: 1px solid var(--gold);
+  border: 2px solid var(--gold);
   margin: 3px;
   padding: 3px;
   border-radius: 20px;
@@ -204,14 +204,14 @@ nav {
   align-items: center;
 }
 
-#sub-menu ul li:hover {
+#sub-menu ul li {
   background: var(--bg-gold);
   background: linear-gradient(
     275deg,
     var(--bg-bronze) 10%,
     var(--bg-gold-tr) 80%
   );
-  color: var(--secondary);
+  color: white;
 }
 
 .active {
