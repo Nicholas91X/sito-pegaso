@@ -165,9 +165,6 @@ nav {
 #sub-menu {
   color: white;
   display: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #sub-menu ul {
