@@ -16,7 +16,7 @@
   --bg-bronze: rgba(80, 49, 19, 1);
   --bg-gold-tr: rgba(200, 110, 0, 1);
   --primary: white;
-  --secondary: #9e9a9a;
+  --secondary: #796161;
 }
 
 * {
@@ -217,6 +217,7 @@ nav {
 .active {
   display: block;
 }
+
 /* MAin */
 main {
   color: var(--primary);
