@@ -15,8 +15,9 @@
   --bg-gold: rgb(200, 110, 0);
   --bg-bronze: rgba(80, 49, 19, 1);
   --bg-gold-tr: rgba(200, 110, 0, 1);
-  --primary: white;
-  --secondary: #796161;
+  --primary: black;
+  --secondary: #c0c0c0;
+  --tertiary: white;
 }
 
 * {
@@ -73,7 +74,7 @@ nav {
   font-size: 20px;
   width: 40px;
   height: 40px;
-  color: var(--primary);
+  color: var(--tertiary);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -140,7 +141,7 @@ nav {
   top: 10px;
   right: 10px;
   z-index: 999;
-  background-color: var(--primary);
+  background-color: var(--tertiary);
   height: 20px;
   width: 20px;
   display: flex;
@@ -180,7 +181,7 @@ nav {
 }
 
 #sub-menu {
-  color: var(--primary);
+  color: var(--tertiary);
   display: none;
 }
 
@@ -253,7 +254,7 @@ main > h1 {
   width: 150px;
   padding: 4px 15px;
   border-radius: 20px;
-  color: var(--primary);
+  color: var(--tertiary);
   background: var(--bg-gold);
   background: linear-gradient(
     125deg,
@@ -323,7 +324,7 @@ main > h1 {
   width: 150px;
   padding: 4px 15px;
   border-radius: 20px;
-  color: var(--primary);
+  color: var(--tertiary);
   background: var(--bg-gold);
   background: linear-gradient(
     275deg,
